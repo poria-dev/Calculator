@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+
+    <div class="back w-full h-screen bg-linear-to-l from-[#dba9b2] to-[#6b6bcf]" id="boxorg">
+
+        <div
+            class="border-2 border-transparent  shadow-2xl w-75 sm:w-100 md:w-125 bg-white  p-5 flex flex-wrap relative left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] rounded-2xl ">
+
+            <div class="w-full flex gap-5">
+                <div class="calc w-1/3 flex flex-wrap justify-evenly my-5 *:flex *:flex-wrap *:w-full">
+
+                    <input type="text" placeholder="number 1 "
+                        class=" border border-transparent text-[15px] px-2 shadow rounded-md font-bold w-full cursor-pointer outline-0">
+
+
+                    <span class="py-1 text-shadow-indigo-600  flex justify-center items-center text-2xl"
+                        id="span"></span>
+
+
+
+                    <input type="text" placeholder="number 2 "
+                        class="  border border-transparent text-[15px] px-2 shadow rounded-md font-bold w-full cursor-pointer outline-0">
+                </div>
+
+                <h2 class=" overflow-x-hidden pl-2 w-1/2 flex justify-center items-center text-md sm:text-lg md:text-2xl text-green-400"
+                    id="h2">
+                    <img src="" alt="" id="img">
+                </h2>
+
+            </div>
+
+
+            <div
+                class="boxbutton w-full h-10  flex justify-evenly *:text-2xl *:border *:border-transparent *:px-4 my-5 *:cursor-pointer *:hover:bg-red-400 *:duration-200 *:rounded-md *:shadow">
+
+
+                <button onclick="op('+', this)">+</button>
+                <button onclick="op('-', this)">-</button>
+                <button onclick="op('*', this)">*</button>
+                <button onclick="op('/', this)">/</button>
+
+            </div>
+
+            <button
+                class="w-full rounded-lg bg-sky-300 pb-2 shadow cursor-pointer my-5 flex justify-center items-center text-5xl"
+                onclick="some(this)">=</button>
+
+            <span class="w-full bg-black rounded-xl my-2 flex justify-center items-center">
+                <img src="img/icons8-moon-symbol-94.png" alt="" onclick="dark(this)" class="cursor-pointer w-1/10 py-2">
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+<script src="calc.js"></script>
+
+</html>
